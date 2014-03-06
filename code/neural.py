@@ -49,12 +49,12 @@ err_3 = hidden_node(o3,err_6,weight36)
 w_56 = adjust_weight(l,weight56,o5,err_6)
 w_46 = adjust_weight(l,weight46,o4,err_6)
 w_36 = adjust_weight(l,weight36,o3,err_6)
-w_25 = adjust_weight(l,weight36,o2,err_5)
-w_24 = adjust_weight(l,weight36,o2,err_4)
-w_23 = adjust_weight(l,weight36,o2,err_3)
-w_15 = adjust_weight(l,weight36,o1,err_5)
-w_14 = adjust_weight(l,weight36,o1,err_4)
-w_13 = adjust_weight(l,weight36,o1,err_3)
+w_25 = adjust_weight(l,weight25,o2,err_5)
+w_24 = adjust_weight(l,weight24,o2,err_4)
+w_23 = adjust_weight(l,weight23,o2,err_3)
+w_15 = adjust_weight(l,weight15,o1,err_5)
+w_14 = adjust_weight(l,weight14,o1,err_4)
+w_13 = adjust_weight(l,weight13,o1,err_3)
 
 #Printing the Errors
 print "err_3: %s" % err_3
