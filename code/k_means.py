@@ -2,6 +2,10 @@
 # Implement simple k-means clustering using 1 dimensional data
 #
 ##/
+import math
+from math import sqrt
+import random
+
 
 dataset = [
     -13.65089255716321, -0.5409562932238607, -88.4726466247223,
@@ -19,30 +23,38 @@ k = 2  # number of clusters
 ###
 # Helper functions
 # Fill in TODOs where needed
+min_data=min(dataset)
+max_data=max(dataset)
+mean=sum(dataset)/len(dataset)
 ##/
 
-def pick_centroids(xs, num):
+def pick_centroids(xs,num):
     """Return list of num centroids given a list of numbers in xs"""
     ###
     # TODO select and return centroids
-    return [1, 2]
     ##/
+    centroids_num = random.sample(xs, num)
+    return centroids_num
 
 
 def distance(a, b):
     """Return the distance of numbers a and b"""
     ###
     # TODO return correct expression
-    return 0
     ##/
+    a_norm = (a-min_data)/(max_data-min_data)
+    b_norm = (b-min_data)/(max_data-min_data)
+    distance = sqrt((a_norm-b_norm)**2)
+    return distance
 
 
 def centroid(xs):
     """Return the centroid number given a list of numbers, xs"""
     ###
     # TODO calculate and return centroid
-    return 0
     ##/
+    centroid_xs = sum(xs)/len(xs)
+    return centroid_xs
 
 
 def cluster(xs, centroids):
