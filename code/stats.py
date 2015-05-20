@@ -3,9 +3,9 @@
 available from ftp://ftp.fec.gov/FEC/2012/pas212.zip - data dictionary is at
 http://www.fec.gov/finance/disclosure/metadata/DataDictionaryContributionstoCandidates.shtml
 """
+cd itpas2.txt
 
-import fileinput
-import csv
+
 
 total = 0.0
 
